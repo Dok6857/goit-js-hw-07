@@ -203,10 +203,12 @@ body {
 /*   TASK 6   */
 
 #controls {
+  width: 486px;
   display: flex;
   padding: 32px;
   align-items: flex-start;
   gap: 16px;
+  margin-bottom: 16px;
 
   border-radius: 8px;
   background: #F6F6FE;
