@@ -33,10 +33,18 @@ images.forEach(image => {
   gallery.insertAdjacentHTML(
     'afterbegin',
     `
-<li class="list-item"><img src="${image.url}" alt="${image.alt}" width="300px"></li>
+<li class="list-item"><img src="${image.url}" alt="${image.alt}" width="360px" height="300px"></li>
 `
   );
 });
 
 gallery.style.display = 'flex';
+gallery.style.columnGap = '24px';
+gallery.style.rowGap = '48px';
+gallery.style.width = '1440px';
+gallery.style.height = '848px';
+gallery.style.padding = '100px 156px';
 gallery.style.flexDirection = 'column';
+gallery.style.flexWrap = 'wrap';
+gallery.style.justifyContent = 'center';
+gallery.style.alignItems = 'flex-start';
